@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopus API Retrieval</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search Scopus Articles</h1>
+        <input type="text" id="searchInput" placeholder="Enter your search query..." />
+
+        <select id="dropdown">
+            <option value="">Select a field to search</option>
+            <option value="TITLE">Title</option>
+            <option value="AUTHOR">Author</option>
+            <option value="AFFIL">Affiliation</option>
+            <option value="KEY">Keywords</option>
+        </select>
+
+        <button id="fetchButton">Fetch Data</button>
+
+        <div id="resultsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
